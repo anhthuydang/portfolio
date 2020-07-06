@@ -1,0 +1,39 @@
+.about {
+    background: linear-gradient( 150deg, $secondary 50%, $primary 50%);
+}
+.about .wrapper {
+    padding: 90px 0;
+}
+h2 {
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+    // margin-bottom: 50px;
+}
+.aboutContainer {
+    margin: 0 70px;
+    display: flex;
+    // justify-content: space-around;
+}
+.imageContainer {
+    width: 30%;
+}
+img {
+    border-radius: 50%;
+}
+
+.textContainer {
+    width: 50%;
+    margin-left: 60px;
+}
+.about span {
+    color: $pink;
+}
+
+.textContainer {
+    font-size: 2rem;
+    line-height: 32px;
+    letter-spacing: 0.7px;
+    display: flex;
+    align-items: center;
+}

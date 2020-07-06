@@ -1,0 +1,42 @@
+header {
+    background-image: linear-gradient(rgba(74, 74, 78, 0.8)),url(./assets/header.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: $secondary;
+}
+nav {
+    margin: 0 5%;
+    height: 8vh;
+    display: flex;
+    justify-content: flex-end;
+}
+header ul {
+    height: 8vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header a {
+    color: $secondary;
+    font-size: 2rem;
+}
+header .wrapper {
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+h1 {
+    font-size: 6rem;
+}
+header span {
+    color: $pink;
+}
+header p {
+    font-size: 3rem;
+}
