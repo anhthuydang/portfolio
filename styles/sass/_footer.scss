@@ -1,0 +1,24 @@
+footer {
+    background: rgba(74, 74, 78, 0.8);
+    color: $primary;
+    font-size: 1.5rem;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+}
+footer .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer ul {
+    display: flex;
+    font-size: 3rem;
+}
+footer li {
+    margin: 20px 10px;
+}
+footer a {
+    color: inherit;
+}
