@@ -244,7 +244,7 @@ html {
   font-size: 62.5%;
 }
 
-h1, h2, p, ul, li {
+h1, h2, h3, p, ul, li {
   margin: 0;
   padding: 0;
 }
@@ -257,10 +257,20 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  text-decoration: none;
+}
+
 .wrapper {
   max-width: 1280px;
   width: 90%;
   margin: 0 auto;
+}
+
+body {
+  font-family: 'Heebo', sans-serif;
+  letter-spacing: 0.7px;
+  line-height: 32px;
 }
 
 header {
@@ -300,6 +310,14 @@ header ul {
 header a {
   color: #f6f5ff;
   font-size: 2rem;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+header a:hover,
+header a:focus {
+  border-bottom-color: #D7263D;
 }
 
 header .wrapper {
@@ -321,26 +339,27 @@ header .wrapper {
 
 h1 {
   font-size: 6rem;
+  margin-bottom: 50px;
 }
 
 header span {
-  color: #fc3a4d;
+  color: #D7263D;
 }
 
 header p {
   font-size: 3rem;
 }
 
-.about {
-  background: linear-gradient(150deg, #f6f5ff 50%, #fff 50%);
-}
-
-.about .wrapper {
+main section {
   padding: 90px 0;
 }
 
+.about {
+  background: linear-gradient(160deg, #f6f5ff 50%, #fff 50%);
+}
+
 h2 {
-  font-size: 4rem;
+  font-size: 5rem;
   width: 100%;
   text-align: center;
 }
@@ -356,7 +375,7 @@ h2 {
   width: 30%;
 }
 
-img {
+.about img {
   border-radius: 50%;
 }
 
@@ -366,7 +385,7 @@ img {
 }
 
 .about span {
-  color: #fc3a4d;
+  color: #D7263D;
 }
 
 .textContainer {
@@ -379,4 +398,69 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.portfolio {
+  background: linear-gradient(160deg, #fff 50%, #f6f5ff 50%);
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 100px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projectImage {
+  width: 45%;
+}
+
+.projectText {
+  width: 50%;
+}
+
+h3 {
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+.projectText p {
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+}
+
+.projectText p:nth-of-type(1) {
+  margin: 25px 0;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.project button {
+  background: transparent;
+  color: #000519;
+  font-size: 2rem;
+  padding: 5px 15px;
+  border: 2px solid #000519;
+  margin-top: 25px;
+}
+
+.project button:hover,
+.project button:focus {
+  color: #fff;
+  -webkit-box-shadow: 2px 2px 3px #000519;
+          box-shadow: 2px 2px 3px #000519;
+}
+
+.project button a {
+  color: #000519;
+}
+
+.projectTwo {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }

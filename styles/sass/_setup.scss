@@ -14,11 +14,13 @@ html {
     font-size: 62.5%;
 }
 
-h1, h2, p, ul ,li { margin: 0; padding: 0;}
+h1, h2, h3, p, ul ,li { margin: 0; padding: 0;}
 
 li { list-style: none;}
 
 a { text-decoration: none;}
+
+a:visited { text-decoration: none;}
 
 .wrapper {
     max-width: 1280px;

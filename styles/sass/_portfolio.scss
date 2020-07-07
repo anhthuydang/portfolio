@@ -1,0 +1,52 @@
+.portfolio {
+    background: linear-gradient( 160deg, $primary 50%, $secondary 50%);
+}
+
+// Project
+.project {
+    display: flex;
+    margin: 100px 0;
+    justify-content: space-between;
+}
+.projectImage {
+    width: 45%;
+}
+.projectText {
+    width: 50%;
+}
+h3 {
+    font-size: 3rem;
+    margin-top: 20px;
+}
+.projectText p {
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+}
+.projectText p:nth-of-type(1) {
+    margin: 25px 0;
+    font-size: 2rem;
+    font-style: italic;
+}
+.project button {
+    background: transparent;
+    color: $heading;
+    font-size: 2rem;
+    padding: 5px 15px;
+    border: 2px solid $heading;
+    margin-top: 25px;
+}
+.project button:hover,
+.project button:focus {
+    color: $primary;
+    box-shadow: 2px 2px 3px $heading;
+    // background: $accent;
+    // border-color: $accent;
+    // border-bottom: 2px solid $accent;
+}
+.project button a {
+    color: $heading;
+}
+//Project Two
+.projectTwo {
+    flex-direction: row-reverse;
+}
