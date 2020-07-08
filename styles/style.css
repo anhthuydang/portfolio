@@ -503,11 +503,89 @@ h3 {
 
 .skills img {
   background: transparent;
-  width: 40px;
+  width: 60px;
 }
 
 .skills p {
   font-size: 2rem;
+}
+
+.contact {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(74, 74, 78, 0.4))), url(./assets/letter2.jpg);
+  background-image: linear-gradient(rgba(74, 74, 78, 0.4)), url(./assets/letter2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact form {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  font-size: 1.5rem;
+}
+
+.contact .formTop {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.contact input {
+  width: calc(49% - 2px);
+  font-size: 1.5rem;
+}
+
+.contact textarea {
+  width: 100%;
+  resize: none;
+  margin-top: 20px;
+}
+
+.contact button {
+  margin-top: 40px;
+  padding: 10px 40px;
+  font-size: 1.8rem;
+  background: rgba(74, 74, 78, 0.9);
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.contact button:hover, .contact button:focus {
+  background: #fff;
+  color: #000519;
 }
 
 footer {
@@ -552,4 +630,9 @@ footer li {
 
 footer a {
   color: inherit;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #D7263D;
 }

@@ -22,3 +22,7 @@ footer li {
 footer a {
     color: inherit;
 }
+footer a:hover,
+footer a:focus {
+    color: $accent;
+}
