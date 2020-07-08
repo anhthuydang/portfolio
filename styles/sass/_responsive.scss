@@ -1,0 +1,113 @@
+@media (max-width: 900px) {
+    // Header
+    header {
+        .hamburger {
+            display: block;
+        }
+        
+        ul {
+            display: none;
+            padding-top: 20px;
+            flex-direction: column;
+            width: 30vw;
+            height: 100vh;
+            text-align: center;
+            justify-content: flex-start;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: linear-gradient(rgba(74, 74, 78, 0.85));
+            transition: all 400ms ease-in;
+        }
+        
+        li {
+            padding: 20px 0;
+            
+        }
+    }
+
+    //About
+    .about {
+        .aboutContainer {
+            margin: 0 30px;
+        }
+        .imageContainer {
+            width: 40%;
+        }
+    }
+
+    //Contact
+    .contact {
+        form {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    //About
+    .about {
+        .aboutContainer {
+            flex-direction: column;
+        }
+
+        .imageContainer {
+            margin: 0 auto;
+            width: 45%;
+        }
+        .textContainer {
+            width: 100%;
+            margin: 50px 0 0 0;
+        }
+    }
+
+    //Portfolio
+    .portfolio {
+        .project {
+            flex-direction: column;
+
+            .projectImage {
+                margin: 0 auto;
+                width: 80%;
+            }
+            .projectText {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .projectThree {
+            margin-bottom: 0;
+        }
+    }
+
+    //Contact
+    .contact {
+        form {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    header .wrapper {
+        margin-left: 5%;
+    }
+    .about {
+        padding-bottom: 0;
+
+        .imageContainer {
+            width: 60%;
+        }
+    }
+    .portfolio .project .projectImage {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .skills {
+        li {
+            width: 33.33%;
+        }
+    }
+}

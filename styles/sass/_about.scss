@@ -1,38 +1,43 @@
 main section {
     padding: 90px 0;
 }
-
-.about {
-    background: linear-gradient( 160deg, $secondary 50%, $primary 50%);
-}
 h2 {
     font-size: 5rem;
     width: 100%;
     text-align: center;
 }
-.aboutContainer {
-    margin: 0 70px;
-    display: flex;
-}
-.imageContainer {
-    width: 30%;
-}
-.about img {
-    border-radius: 50%;
-}
 
-.textContainer {
-    width: 50%;
-    margin-left: 60px;
-}
-.about span {
-    color: $accent;
-}
+.about {
+    background: linear-gradient( 160deg, $secondary 50%, $primary 50%);
 
-.textContainer {
-    font-size: 2rem;
-    line-height: 32px;
-    letter-spacing: 0.7px;
-    display: flex;
-    align-items: center;
+    h2 {
+        margin-bottom: 50px;
+    }
+    span {
+        color: $accent;
+    }
+
+    .aboutContainer {
+        margin: 0 70px;
+        display: flex;
+    }
+
+    .imageContainer {
+        width: 30%;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    .textContainer {
+        width: 50%;
+        margin-left: 60px;
+        font-size: 2rem;
+        line-height: 32px;
+        letter-spacing: 0.7px;
+        display: flex;
+        align-items: center;
+    }
+
 }
