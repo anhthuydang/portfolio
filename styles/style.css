@@ -728,7 +728,10 @@ footer a:hover, footer a:focus {
 
 @media (max-width: 500px) {
   header .wrapper {
-    margin-left: 5%;
+    padding-left: 5%;
+  }
+  header ul {
+    width: 50%;
   }
   .about {
     padding-bottom: 0;
@@ -742,6 +745,12 @@ footer a:hover, footer a:focus {
 }
 
 @media (max-width: 400px) {
+  header ul {
+    width: 60%;
+  }
+  header .hamburger {
+    right: 20px;
+  }
   .skills li {
     width: 33.33%;
   }

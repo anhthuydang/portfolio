@@ -88,10 +88,18 @@
     }
 }
 
+// -------MEDIA QUERIES--------
+
 @media (max-width: 500px) {
-    header .wrapper {
-        margin-left: 5%;
-    }
+    header {
+        .wrapper {
+            padding-left: 5%;
+        }
+        ul {
+            width: 50%;
+        }
+
+    } 
     .about {
         padding-bottom: 0;
 
@@ -105,6 +113,16 @@
 }
 
 @media (max-width: 400px) {
+    header{
+        ul {
+            width: 60%;
+        }
+
+        .hamburger {
+            right: 20px;
+        }
+
+    } 
     .skills {
         li {
             width: 33.33%;
