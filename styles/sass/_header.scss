@@ -38,6 +38,16 @@ header {
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        .exitButton {
+            display: none;
+            background: transparent;
+            color: $primary;
+            border: none;
+            font-size: 3rem;
+            position: absolute;
+            left: 5px;
+        }
     }
 
     a {

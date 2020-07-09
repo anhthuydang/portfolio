@@ -325,6 +325,16 @@ header ul {
           align-items: center;
 }
 
+header ul .exitButton {
+  display: none;
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-size: 3rem;
+  position: absolute;
+  left: 5px;
+}
+
 header a {
   color: #000519;
   font-size: 2rem;
@@ -674,10 +684,6 @@ footer a:hover, footer a:focus {
     height: 80px;
   }
   header ul {
-    display: none;
-  }
-  header .sideBar {
-    display: block;
     padding-top: 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -689,13 +695,19 @@ footer a:hover, footer a:focus {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    position: absolute;
+    position: relative;
     top: 0;
-    right: 0;
+    right: -45vw;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(74, 74, 78, 0.75)));
     background: linear-gradient(rgba(74, 74, 78, 0.75));
     -webkit-transition: all 400ms ease-in;
     transition: all 400ms ease-in;
+  }
+  header ul .exitButton {
+    display: block;
+  }
+  header .sideBar {
+    right: -5vw;
   }
   header .sideBar a {
     color: #f6f5ff;

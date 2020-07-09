@@ -1,20 +1,21 @@
 $(function() {
 
-    //Show side nav when hamburger clicked
+    // Show side nav when hamburger clicked
     $(".hamburger").on("click", function() {
         $(".hamburger").addClass('hideHamburger');
         $("header ul").addClass('sideBar');
     });
-
-    $("header ul").on("mouseleave", function() {
-        $(".hamburger").removeClass('hideHamburger');
+    //Hide side bar
+    $(".exitButton").on("click", function() {
         $("header ul").removeClass('sideBar');
-        
-    });
+        $(".hamburger").removeClass('hideHamburger');
+
+    })
 
     //Smooth Scroll
     $("header a").on("click", function(e) {
         e.preventDefault();
+        $('header ul').removeClass('sideBar');
         const value = $(this).attr("value");
         let target;
         if (value === "home") {
@@ -33,6 +34,10 @@ $(function() {
             },
             "slow"
           );
+
+          $('header ul').removeClass('sideBar');
+          $(".hamburger").removeClass('hideHamburger');
+
     })
 
 });

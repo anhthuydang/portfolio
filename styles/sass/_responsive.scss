@@ -15,23 +15,27 @@
         }
 
         ul {
-            display: none;
-        }
-
-        //class to be added to ul for hamburger menu
-        .sideBar {
-            display: block;
             padding-top: 20px;
             flex-direction: column;
             width: 40vw;
             height: 100vh;
             text-align: center;
             justify-content: flex-start;
-            position: absolute;
+            position: relative;
             top: 0;
-            right: 0;
+            right: -45vw;
             background: linear-gradient(rgba(74, 74, 78, 0.75));
             transition: all 400ms ease-in;
+
+            .exitButton {
+                display: block;
+            }
+            
+        }
+
+        //class to be added to ul for hamburger menu
+        .sideBar {
+            right: -5vw;
 
             a {
                 color: $secondary;
