@@ -673,7 +673,7 @@ footer a:hover, footer a:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 35vw;
+    width: 40vw;
     height: 100vh;
     text-align: center;
     -webkit-box-pack: start;
@@ -757,8 +757,12 @@ footer a:hover, footer a:focus {
 }
 
 @media (max-width: 400px) {
-  header ul {
-    width: 60%;
+  header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(74, 74, 78, 0.8))), url(./assets/mobileHeader.jpg);
+    background-image: linear-gradient(rgba(74, 74, 78, 0.8)), url(./assets/mobileHeader.jpg);
+  }
+  header .sideBar {
+    width: 60vw;
   }
   header .hamburger {
     right: 20px;
