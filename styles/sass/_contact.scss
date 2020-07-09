@@ -8,7 +8,6 @@
     .wrapper {
         display: flex;
         flex-direction: column;
-        // justify-content: center;
         align-items: center;
     }
 
@@ -55,6 +54,7 @@
             &:focus {
                 background: $primary;
                 color: $heading;
+                cursor: pointer;
             }
     }
     

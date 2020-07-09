@@ -1,15 +1,15 @@
 $(function() {
     //Show side nav when hamburger clicked
     $(".hamburger").on("click", function() {
-        $(".hamburger").hide();
-        $("header ul").fadeIn();
+        $(".hamburger").addClass('hideHamburger');
+        $("header ul").addClass('sideBar');
     });
 
-    // $("header ul").on("click", function() {
-    //     $(".hamburger").show();
-    //     $("header ul").hide();
+    $("header ul").on("mouseleave", function() {
+        $(".hamburger").removeClass('hideHamburger');
+        $("header ul").removeClass('sideBar');
         
-    // });
+    });
 
     //Smooth Scroll
     $("a").on("click", function(e) {

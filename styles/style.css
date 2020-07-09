@@ -300,7 +300,13 @@ header .hamburger {
   position: absolute;
   top: 20px;
   right: 50px;
+  background: transparent;
+  border: none;
   display: none;
+}
+
+header .hideHamburger {
+  opacity: 0;
 }
 
 header ul {
@@ -465,6 +471,7 @@ h3 {
   color: #fff;
   -webkit-box-shadow: 2px 2px 3px #000519;
           box-shadow: 2px 2px 3px #000519;
+  cursor: pointer;
 }
 
 .project button a {
@@ -599,6 +606,7 @@ h3 {
 .contact button:hover, .contact button:focus {
   background: #fff;
   color: #000519;
+  cursor: pointer;
 }
 
 footer {
@@ -648,6 +656,7 @@ footer a {
 
 footer a:hover, footer a:focus {
   color: #D7263D;
+  cursor: pointer;
 }
 
 @media (max-width: 900px) {
@@ -656,12 +665,15 @@ footer a:hover, footer a:focus {
   }
   header ul {
     display: none;
+  }
+  header .sideBar {
+    display: block;
     padding-top: 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 30vw;
+    width: 35vw;
     height: 100vh;
     text-align: center;
     -webkit-box-pack: start;
@@ -670,8 +682,8 @@ footer a:hover, footer a:focus {
     position: absolute;
     top: 0;
     right: 0;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(74, 74, 78, 0.85)));
-    background: linear-gradient(rgba(74, 74, 78, 0.85));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(74, 74, 78, 0.9)));
+    background: linear-gradient(rgba(74, 74, 78, 0.9));
     -webkit-transition: all 400ms ease-in;
     transition: all 400ms ease-in;
   }

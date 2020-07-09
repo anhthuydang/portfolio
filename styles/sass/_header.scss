@@ -20,7 +20,12 @@ header {
         position: absolute;
         top: 20px;
         right: 50px;
+        background: transparent;
+        border: none;
         display: none;
+    }
+    .hideHamburger {
+        opacity: 0;
     }
     
     ul {

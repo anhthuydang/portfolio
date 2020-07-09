@@ -42,6 +42,7 @@ h3 {
         &:focus {
             color: $primary;
             box-shadow: 2px 2px 3px $heading;
+            cursor: pointer;
         }
 
         a {
