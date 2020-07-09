@@ -288,14 +288,37 @@ header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #fff;
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 10;
   width: 100%;
+}
+
+header .logo {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #d7263d;
+  border: 2px solid #000519;
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(135deg, rgba(105, 75, 200, 0.4) 50%, #fff 50%);
 }
 
 header .hamburger {
@@ -306,6 +329,10 @@ header .hamburger {
   background: transparent;
   border: none;
   display: none;
+}
+
+header .hamburger:hover, header .hamburger:focus {
+  color: #d7263d;
 }
 
 header .hideHamburger {
@@ -335,6 +362,10 @@ header ul .exitButton {
   left: 5px;
 }
 
+header ul .exitButton:hover, header ul .exitButton:focus {
+  color: #d7263d;
+}
+
 header a {
   color: #000519;
   font-size: 2rem;
@@ -344,7 +375,7 @@ header a {
 }
 
 header a:hover, header a:focus {
-  border-bottom-color: #D7263D;
+  border-bottom-color: #d7263d;
 }
 
 header .wrapper {
@@ -363,22 +394,22 @@ header .wrapper {
   padding-left: 20%;
 }
 
+header .wrapper p:first-child {
+  font-size: 5rem;
+}
+
+header .wrapper p:last-child {
+  font-size: 3rem;
+}
+
 header h1 {
   font-size: 7rem;
   margin: 50px 0;
 }
 
 header span {
-  color: #D7263D;
+  color: #d7263d;
   font-style: italic;
-}
-
-header p:first-child {
-  font-size: 5rem;
-}
-
-header p:last-child {
-  font-size: 3rem;
 }
 
 main section {
@@ -401,7 +432,7 @@ h2 {
 }
 
 .about span {
-  color: #D7263D;
+  color: #d7263d;
 }
 
 .about .aboutContainer {
@@ -440,6 +471,19 @@ h2 {
 h3 {
   font-size: 3rem;
   margin-top: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 90%;
+  height: 50%;
+  background: rgba(105, 75, 200, 0.4);
+  z-index: 0;
 }
 
 .project {
@@ -454,6 +498,13 @@ h3 {
 
 .project .projectImage {
   width: 45%;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.project .projectImage:hover, .project .projectImage:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .project .projectText {
@@ -481,9 +532,7 @@ h3 {
 }
 
 .project button:hover, .project button:focus {
-  color: #fff;
-  -webkit-box-shadow: 2px 2px 3px #000519;
-          box-shadow: 2px 2px 3px #000519;
+  background: rgba(105, 75, 200, 0.4);
   cursor: pointer;
 }
 
@@ -491,7 +540,7 @@ h3 {
   color: #000519;
 }
 
-.projectTwo {
+.dessertCorner {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -528,6 +577,13 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 40px;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.skills li:hover, .skills li:focus {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .skills i {
@@ -599,6 +655,11 @@ h3 {
 .contact input {
   width: calc(49% - 2px);
   font-size: 1.5rem;
+  border: 1px solid transparent;
+}
+
+.contact input:focus {
+  border-color: #000519;
 }
 
 .contact textarea {
@@ -668,7 +729,7 @@ footer a {
 }
 
 footer a:hover, footer a:focus {
-  color: #D7263D;
+  color: #d7263d;
   cursor: pointer;
 }
 

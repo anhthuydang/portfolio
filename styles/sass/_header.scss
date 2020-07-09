@@ -1,4 +1,3 @@
-
 header {
     background-image: url(./assets/background/diamond.jpg);
     background-attachment: fixed;
@@ -10,12 +9,27 @@ header {
         padding: 0 5%;
         height: 10vh;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
+        align-items: center;
         background: $primary;
         position: fixed;
         top: 0;
         right: 0;
+        z-index: 10;
         width: 100%;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: $accent;
+        border: 2px solid $text;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient( 135deg, $secondaryAccent 50%, $primary 50%);
     }
 
     .hamburger {
@@ -26,6 +40,10 @@ header {
         background: transparent;
         border: none;
         display: none;
+        &:hover,
+        &:focus {
+            color: $accent;
+        }
     }
 
     .hideHamburger {
@@ -47,6 +65,10 @@ header {
             font-size: 3rem;
             position: absolute;
             left: 5px;
+            &:hover,
+            &:focus {
+                color: $accent;
+            }
         }
     }
 
@@ -68,6 +90,15 @@ header {
         justify-content: center;
         text-align: left;
         padding-left: 20%;
+
+        p:first-child {
+            font-size: 5rem;
+        }
+    
+        p:last-child {
+            font-size: 3rem;
+        }
+
     }
 
     h1 {
@@ -78,14 +109,6 @@ header {
     span {
         color: $accent;
         font-style: italic;
-
     }
-
-    p:first-child {
-        font-size: 5rem;
-    }
-
-    p:last-child {
-        font-size: 3rem;
-    }
+    
 }

@@ -37,6 +37,11 @@
     input {
         width: calc(49% - 2px);
         font-size: 1.5rem;
+        border: 1px solid transparent;
+
+        &:focus {
+            border-color: $text;
+        }
     }
 
     textarea {
