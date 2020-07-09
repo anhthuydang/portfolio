@@ -119,6 +119,13 @@
     .portfolio .project .projectImage {
         width: 100%;
     }
+
+    //Skills
+    .skills {
+        li {
+            width: 33.33%;
+        }
+    }
 }
 
 @media (max-width: 400px) {
@@ -134,10 +141,11 @@
             right: 20px;
         }
     } 
+
     //Skills
     .skills {
         li {
-            width: 33.33%;
+            width: 50%;
         }
     }
 }
