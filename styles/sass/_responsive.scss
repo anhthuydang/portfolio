@@ -15,27 +15,30 @@
         }
 
         ul {
-            padding-top: 20px;
+            padding-top: 10px;
             flex-direction: column;
             width: 40vw;
             height: 100vh;
             text-align: center;
             justify-content: flex-start;
-            position: relative;
+            position: absolute;
             top: 0;
-            right: -45vw;
+            right: -40vw;
             background: linear-gradient(rgba(74, 74, 78, 0.75));
             transition: all 400ms ease-in;
 
             .exitButton {
                 display: block;
             }
+            .exitButton + li {
+                margin-top: 20px;
+            }
             
         }
 
         //class to be added to ul for hamburger menu
         .sideBar {
-            right: -5vw;
+            right: 0;
 
             a {
                 color: $secondary;
@@ -45,6 +48,8 @@
         li {
             padding: 20px 0;
         }
+        
+        
 
     }
 
@@ -125,9 +130,9 @@
             padding-left: 3%;
         }
 
-        ul {
-            width: 50%;
-        }
+        // ul {
+        //     width: 50%;
+        // }
     } 
     //About
     .about {

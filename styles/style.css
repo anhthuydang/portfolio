@@ -314,7 +314,7 @@ header .hideHamburger {
 
 header ul {
   height: 10vh;
-  width: 40%;
+  width: 40vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -684,7 +684,7 @@ footer a:hover, footer a:focus {
     height: 80px;
   }
   header ul {
-    padding-top: 20px;
+    padding-top: 10px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -695,9 +695,9 @@ footer a:hover, footer a:focus {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    position: relative;
+    position: absolute;
     top: 0;
-    right: -45vw;
+    right: -40vw;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(74, 74, 78, 0.75)));
     background: linear-gradient(rgba(74, 74, 78, 0.75));
     -webkit-transition: all 400ms ease-in;
@@ -706,8 +706,11 @@ footer a:hover, footer a:focus {
   header ul .exitButton {
     display: block;
   }
+  header ul .exitButton + li {
+    margin-top: 20px;
+  }
   header .sideBar {
-    right: -5vw;
+    right: 0;
   }
   header .sideBar a {
     color: #f6f5ff;
@@ -766,9 +769,6 @@ footer a:hover, footer a:focus {
 @media (max-width: 500px) {
   header .wrapper {
     padding-left: 3%;
-  }
-  header ul {
-    width: 50%;
   }
   .about {
     padding-bottom: 0;
