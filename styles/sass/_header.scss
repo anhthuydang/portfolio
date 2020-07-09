@@ -1,5 +1,5 @@
 header {
-    background-image: url(./assets/background/diamond.jpg);
+    background-image: url(./assets/header.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,7 +7,7 @@ header {
 
     nav {
         padding: 0 5%;
-        height: 10vh;
+        height: 80px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -51,7 +51,6 @@ header {
     }
     
     ul {
-        height: 10vh;
         width: 40vw;
         display: flex;
         justify-content: space-around;
