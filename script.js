@@ -12,7 +12,7 @@ $(function() {
     });
 
     //Smooth Scroll
-    $("a").on("click", function(e) {
+    $("header a").on("click", function(e) {
         e.preventDefault();
         const value = $(this).attr("value");
         let target;
