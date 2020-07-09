@@ -302,7 +302,7 @@ header .hamburger {
   font-size: 3.5rem;
   position: absolute;
   top: 20px;
-  right: 40px;
+  right: 20px;
   background: transparent;
   border: none;
   display: none;
@@ -663,6 +663,10 @@ footer a:hover, footer a:focus {
 }
 
 @media (max-width: 900px) {
+  header {
+    background-size: contain;
+    background-repeat: repeat;
+  }
   header .hamburger {
     display: block;
   }
