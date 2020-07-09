@@ -1,14 +1,12 @@
-// #ff3d4f  hong
-// #79819e tim dam chu~
-// #f93b4e chu~ do?
 
-$heading: #000519;
-$secondary: #f6f5ff; //light purple
 $primary: #fff;
+$secondary: #f6f5ff; //light purple
+$text: #000519;
 $accent:#D7263D;
 
 body {
     font-family: 'Heebo', sans-serif;
     letter-spacing: 0.7px;
     line-height: 32px;
+    color: $text;
 }

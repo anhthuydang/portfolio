@@ -25,6 +25,7 @@
         display: flex;
         justify-content: space-between;
     }
+
     input,
     textarea {
         padding: 10px;
@@ -32,6 +33,7 @@
         background: rgba(255, 255, 255, 0.6)
 
     }
+
     input {
         width: calc(49% - 2px);
         font-size: 1.5rem;
@@ -53,9 +55,8 @@
             &:hover,
             &:focus {
                 background: $primary;
-                color: $heading;
+                color: $text;
                 cursor: pointer;
             }
-    }
-    
+    } 
 }

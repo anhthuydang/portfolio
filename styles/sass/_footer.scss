@@ -14,13 +14,16 @@ footer {
         justify-content: center;
         
     }
+
     ul {
         display: flex;
         font-size: 3rem;
     }
+
     li {
         margin: 20px 10px;
     }
+    
     a {
         color: inherit;
         &:hover,

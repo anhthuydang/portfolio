@@ -3,14 +3,20 @@
 @media (max-width: 900px) {
     // Header
     header {
+        
         .hamburger {
             display: block;
         }
         
+        nav {
+            height: 80px;
+        }
+
         ul {
             display: none;
         }
 
+        //class to be added to ul for hamburger menu
         .sideBar {
             display: block;
             padding-top: 20px;
@@ -22,18 +28,23 @@
             position: absolute;
             top: 0;
             right: 0;
-            background: linear-gradient(rgba(74, 74, 78, 0.9));
+            background: linear-gradient(rgba(74, 74, 78, 0.75));
             transition: all 400ms ease-in;
+
+            a {
+                color: $secondary;
+            }
         }
 
         li {
             padding: 20px 0;
-            
         }
+
     }
 
     //About
     .about {
+
         .aboutContainer {
             margin: 0 30px;
         }
@@ -49,6 +60,7 @@
             width: 90%;
         }
     }
+
 }
 
 @media (max-width: 720px) {
@@ -71,6 +83,7 @@
 
     //Portfolio
     .portfolio {
+
         .project {
             flex-direction: column;
 
@@ -78,11 +91,13 @@
                 margin: 0 auto;
                 width: 80%;
             }
+
             .projectText {
                 width: 100%;
                 text-align: center;
             }
         }
+
         .projectThree {
             margin-bottom: 0;
         }
@@ -94,26 +109,29 @@
             width: 100%;
         }
     }
-}
 
+}
 
 @media (max-width: 500px) {
     //Header
     header {
         .wrapper {
-            padding-left: 5%;
+            padding-left: 3%;
         }
+
         ul {
             width: 50%;
         }
     } 
     //About
     .about {
+
         padding-bottom: 0;
 
         .imageContainer {
             width: 60%;
         }
+
     }
     //Portfolio
     .portfolio .project .projectImage {
@@ -131,7 +149,6 @@
 @media (max-width: 400px) {
     //header
     header {
-        background-image: linear-gradient(rgba(74, 74, 78, 0.8)),url(./assets/mobileHeader.jpg);
 
         .sideBar {
             width: 60vw;
@@ -140,6 +157,7 @@
         .hamburger {
             right: 20px;
         }
+
     } 
 
     //Skills

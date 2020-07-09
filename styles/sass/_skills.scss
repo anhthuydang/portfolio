@@ -4,10 +4,12 @@
     h2 {
         margin-bottom: 100px;
     }
+
     ul {
         display: flex;
         flex-wrap: wrap;
     }
+
     li {
         width: 25%;
         display: flex;
@@ -15,15 +17,19 @@
         align-items: center;
         margin-bottom: 40px;
     }
+
     i {
         font-size: 6rem;
 
     }
+
     img {
         background: transparent;
         width: 60px;
     }
+
     p {
         font-size: 2rem;
     }
+    
 }
