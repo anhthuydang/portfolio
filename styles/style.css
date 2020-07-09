@@ -359,7 +359,7 @@ header ul .exitButton {
   border: none;
   font-size: 3rem;
   position: absolute;
-  left: 5px;
+  left: 0;
 }
 
 header ul .exitButton:hover, header ul .exitButton:focus {
@@ -830,6 +830,10 @@ footer a:hover, footer a:focus {
 @media (max-width: 500px) {
   header .wrapper {
     padding-left: 3%;
+  }
+  header ul {
+    width: 50vw;
+    right: -50vw;
   }
   .about {
     padding-bottom: 0;
