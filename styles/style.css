@@ -369,8 +369,6 @@ header a {
   color: #000519;
   font-size: 2rem;
   border-bottom: 2px solid transparent;
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
 }
 
 header a:hover, header a:focus {
@@ -446,6 +444,12 @@ header span {
 main section {
   padding: 100px 0;
   color: #000519;
+}
+
+button,
+a {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 h2 {

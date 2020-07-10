@@ -4,6 +4,11 @@ main section {
     color: $text;
 }
 
+button,
+a {
+    transition: all 300ms ease-in-out;
+}
+
 h2 {
     font-size: 5rem;
     width: 100%;
