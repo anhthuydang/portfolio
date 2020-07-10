@@ -61,7 +61,7 @@ header {
             background: transparent;
             color: $primary;
             border: none;
-            font-size: 3rem;
+            font-size: 2.5rem;
             position: absolute;
             left: 0;
             &:hover,
@@ -89,21 +89,33 @@ header {
         justify-content: center;
         text-align: left;
         padding-left: 20%;
-
+        
+        p:first-child,
+        h1,
+        p:last-child {
+            animation: slideIn ease-in-out;
+            position: relative;
+        }
         p:first-child {
             font-size: 5rem;
+            animation-duration: 1s;
         }
-    
+        
+        h1 {
+            font-size: 7rem;
+            margin: 50px 0;
+            animation-duration: 1.7s;
+        }
+
         p:last-child {
-            font-size: 3rem;
+            font-size: 4rem;
+            animation-duration: 2.5s;
         }
 
+
     }
 
-    h1 {
-        font-size: 7rem;
-        margin: 50px 0;
-    }
+    
 
     span {
         color: $accent;
@@ -111,3 +123,13 @@ header {
     }
     
 }
+
+@keyframes slideIn {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 0%;
+    }
+}
+

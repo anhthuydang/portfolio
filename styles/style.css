@@ -356,7 +356,7 @@ header ul .exitButton {
   background: transparent;
   color: #fff;
   border: none;
-  font-size: 3rem;
+  font-size: 2.5rem;
   position: absolute;
   left: 0;
 }
@@ -393,22 +393,54 @@ header .wrapper {
   padding-left: 20%;
 }
 
+header .wrapper p:first-child,
+header .wrapper h1,
+header .wrapper p:last-child {
+  -webkit-animation: slideIn ease-in-out;
+          animation: slideIn ease-in-out;
+  position: relative;
+}
+
 header .wrapper p:first-child {
   font-size: 5rem;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+header .wrapper h1 {
+  font-size: 7rem;
+  margin: 50px 0;
+  -webkit-animation-duration: 1.7s;
+          animation-duration: 1.7s;
 }
 
 header .wrapper p:last-child {
-  font-size: 3rem;
-}
-
-header h1 {
-  font-size: 7rem;
-  margin: 50px 0;
+  font-size: 4rem;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
 }
 
 header span {
   color: #d7263d;
   font-style: italic;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0%;
+  }
 }
 
 main section {
@@ -450,31 +482,40 @@ h2 {
 }
 
 .about .textContainer {
-  width: 50%;
+  width: 60%;
   margin-left: 60px;
+  margin-top: 20px;
   font-size: 2rem;
   line-height: 32px;
   letter-spacing: 0.7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.about .textContainer p {
+  margin-bottom: 20px;
 }
 
 .portfolio {
   background: linear-gradient(160deg, #fff 50%, #f6f5ff 50%);
 }
 
-h3 {
+.portfolio h3 {
   font-size: 3rem;
   margin-top: 20px;
   position: relative;
   display: inline-block;
 }
 
-h3::after {
+.portfolio h3::after {
   content: "";
   position: absolute;
   bottom: 0;
