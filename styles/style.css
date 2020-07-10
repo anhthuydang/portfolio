@@ -780,6 +780,9 @@ footer a:hover, footer a:focus {
 }
 
 @media (max-width: 900px) {
+  header {
+    background-attachment: scroll;
+  }
   header .hamburger {
     display: block;
   }
