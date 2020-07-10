@@ -391,7 +391,6 @@ header .wrapper {
           justify-content: center;
   text-align: left;
   padding-left: 20%;
-  position: relative;
 }
 
 header .wrapper p:first-child,
@@ -399,14 +398,13 @@ header .wrapper h1,
 header .wrapper p:last-child {
   -webkit-animation: slideIn ease-in-out;
           animation: slideIn ease-in-out;
-  position: absolute;
+  position: relative;
 }
 
 header .wrapper p:first-child {
   font-size: 5rem;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  top: 40%;
 }
 
 header .wrapper h1 {
@@ -420,7 +418,6 @@ header .wrapper p:last-child {
   font-size: 4rem;
   -webkit-animation-duration: 2.5s;
           animation-duration: 2.5s;
-  bottom: 40%;
 }
 
 header span {
@@ -433,7 +430,7 @@ header span {
     right: -100%;
   }
   100% {
-    right: 20%;
+    right: 0%;
   }
 }
 
@@ -442,7 +439,7 @@ header span {
     right: -100%;
   }
   100% {
-    right: 20%;
+    right: 0%;
   }
 }
 
