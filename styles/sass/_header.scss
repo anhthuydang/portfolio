@@ -89,16 +89,19 @@ header {
         justify-content: center;
         text-align: left;
         padding-left: 20%;
+        position: relative;
         
         p:first-child,
         h1,
         p:last-child {
             animation: slideIn ease-in-out;
-            position: relative;
+            position: absolute;
         }
         p:first-child {
             font-size: 5rem;
             animation-duration: 1s;
+            top: 40%
+
         }
         
         h1 {
@@ -110,6 +113,7 @@ header {
         p:last-child {
             font-size: 4rem;
             animation-duration: 2.5s;
+            bottom: 40%;
         }
 
 
@@ -129,7 +133,7 @@ header {
         right: -100%;
     }
     100% {
-        right: 0%;
+        right: 20%;
     }
 }
 
