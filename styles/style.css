@@ -778,10 +778,6 @@ footer a:hover, footer a:focus {
 }
 
 @media (max-width: 900px) {
-  header {
-    background-size: contain;
-    background-repeat: repeat;
-  }
   header .hamburger {
     display: block;
   }
