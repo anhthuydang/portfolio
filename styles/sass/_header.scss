@@ -2,8 +2,15 @@ header {
     background-image: url(./assets/header.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
+    // background-size: cover;
+    // height: 100vh;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
+    overflow: hidden;
 
     nav {
         padding: 0 5%;

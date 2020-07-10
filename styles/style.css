@@ -279,7 +279,8 @@ header {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
+  overflow: hidden;
 }
 
 header nav {
@@ -778,10 +779,6 @@ footer a:hover, footer a:focus {
 }
 
 @media (max-width: 900px) {
-  header {
-    background-size: cover;
-    width: 100vw;
-  }
   header .hamburger {
     display: block;
   }
