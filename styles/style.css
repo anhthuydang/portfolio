@@ -302,6 +302,8 @@ header nav {
   right: 0;
   z-index: 10;
   width: 100%;
+  -webkit-box-shadow: 0 0 2px #000519;
+          box-shadow: 0 0 2px #000519;
 }
 
 header .logo {
@@ -871,7 +873,7 @@ footer a:hover, footer a:focus {
 
 @media (max-width: 500px) {
   header .wrapper {
-    padding-left: 3%;
+    padding-left: 0;
   }
   header ul {
     width: 50vw;
@@ -896,9 +898,21 @@ footer a:hover, footer a:focus {
     width: 60vw;
   }
   header .hamburger {
-    right: 20px;
+    right: 4%;
   }
   .skills li {
     width: 50%;
+  }
+  .contact .formTop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .formTop input {
+    width: 100%;
+  }
+  .contact .formTop input:nth-of-type(1) {
+    margin-bottom: 20px;
   }
 }
