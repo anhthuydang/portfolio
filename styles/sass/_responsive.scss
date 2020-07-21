@@ -109,6 +109,7 @@
 
     //Contact
     .contact {
+        
         form {
             width: 100%;
         }
@@ -156,12 +157,20 @@
     //header
     header {
 
-        .sideBar {
-            width: 60vw;
+        .wrapper {
+
+            h1 {
+                font-size: 6rem;
+            }
+
+            h2 {
+                font-size: 4rem;
+            }
+
         }
 
-        .hamburger {
-            right: 4%;
+        .sideBar {
+            width: 60vw;
         }
 
     } 

@@ -327,6 +327,7 @@ header .logo {
 
 header .hamburger {
   font-size: 3.5rem;
+  padding: 0;
   position: absolute;
   top: 20px;
   right: 20px;
@@ -395,36 +396,26 @@ header .wrapper {
   padding-left: 20%;
 }
 
-header .wrapper p:first-child,
 header .wrapper h1,
-header .wrapper p:last-child {
+header .wrapper h2 {
   -webkit-animation: slideIn ease-in-out;
           animation: slideIn ease-in-out;
   position: relative;
 }
 
-header .wrapper p:first-child {
-  font-size: 5rem;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-}
-
 header .wrapper h1 {
   font-size: 7rem;
-  margin: 50px 0;
-  -webkit-animation-duration: 1.7s;
-          animation-duration: 1.7s;
-}
-
-header .wrapper p:last-child {
-  font-size: 4rem;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
-}
-
-header span {
+  margin: 70px 0;
   color: #d7263d;
-  font-style: italic;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+}
+
+header .wrapper h2 {
+  font-size: 5rem;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  text-align: left;
 }
 
 @-webkit-keyframes slideIn {
@@ -894,11 +885,14 @@ footer a:hover, footer a:focus {
 }
 
 @media (max-width: 400px) {
+  header .wrapper h1 {
+    font-size: 6rem;
+  }
+  header .wrapper h2 {
+    font-size: 4rem;
+  }
   header .sideBar {
     width: 60vw;
-  }
-  header .hamburger {
-    right: 4%;
   }
   .skills li {
     width: 50%;
