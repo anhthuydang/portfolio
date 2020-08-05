@@ -63,20 +63,6 @@ header {
         display: flex;
         justify-content: space-around;
         align-items: center;
-
-        .exitButton {
-            display: none;
-            background: transparent;
-            color: $primary;
-            border: none;
-            font-size: 2.5rem;
-            position: absolute;
-            left: 0;
-            &:hover,
-            &:focus {
-                color: $accent;
-            }
-        }
     }
 
     a {

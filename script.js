@@ -1,15 +1,15 @@
 $(function() {
 
     // Show side nav when hamburger clicked
-    $(".hamburger").on("click", function() {
+    $(".hamburger").on("click", function(e) {
         $(".hamburger").addClass('hideHamburger');
         $("header ul").addClass('sideBar');
+        e.stopPropagation();
     });
     //Hide side bar
-    $(".exitButton").on("click", function() {
+    $("html").on("click", function() {
         $("header ul").removeClass('sideBar');
         $(".hamburger").removeClass('hideHamburger');
-
     })
 
     //Smooth Scroll
