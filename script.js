@@ -10,7 +10,15 @@ $(function() {
     $("html").on("click", function() {
         $("header ul").removeClass('sideBar');
         $(".hamburger").removeClass('hideHamburger');
+    });
+    //Hide sidebar by Escape key for accessibility
+    $("html").on("keydown", function(e) {
+        if (e.key.includes("Escape")) {
+            $("header ul").removeClass('sideBar');
+            $(".hamburger").removeClass('hideHamburger');
+        }
     })
+
 
     //Smooth Scroll
     $("header a").on("click", function(e) {
