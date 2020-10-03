@@ -85,7 +85,7 @@ header {
         
         h1,
         h2 {
-            animation: slideIn ease-in-out;
+            // animation: slideIn ease-in-out;
             position: relative;
         }
 
@@ -100,6 +100,7 @@ header {
             font-size: 5rem;
             animation-duration: 2s;
             text-align: left;
+            font-style: italic;
         }
         
     }

@@ -356,20 +356,6 @@ header ul {
           align-items: center;
 }
 
-header ul .exitButton {
-  display: none;
-  background: transparent;
-  color: #fff;
-  border: none;
-  font-size: 2.5rem;
-  position: absolute;
-  left: 0;
-}
-
-header ul .exitButton:hover, header ul .exitButton:focus {
-  color: #d7263d;
-}
-
 header a {
   color: #000519;
   font-size: 2rem;
@@ -398,8 +384,6 @@ header .wrapper {
 
 header .wrapper h1,
 header .wrapper h2 {
-  -webkit-animation: slideIn ease-in-out;
-          animation: slideIn ease-in-out;
   position: relative;
 }
 
@@ -416,6 +400,7 @@ header .wrapper h2 {
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   text-align: left;
+  font-style: italic;
 }
 
 @-webkit-keyframes slideIn {

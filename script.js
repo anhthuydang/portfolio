@@ -1,4 +1,20 @@
 $(function() {
+    //typeIt effect
+    new TypeIt("#typeIt", {
+        speed: 40,
+        loop: true,
+        startDelay: 500,
+        deleteSpeed: 40
+    })
+    .type("Web Developer", {delay: 2000})
+    .delete(null, {delay: 1000})
+    .type("Coder", {delay: 2000})
+    .delete(null, {delay: 1000})
+    .type("Problem Solver", {delay: 2000})
+    .delete(null, {delay: 1000})
+    .type("Team Player", {delay: 2000})
+    .delete(null, {delay: 1000})
+    .go();
 
     // Show side nav when hamburger clicked
     $(".hamburger").on("click", function(e) {
@@ -11,7 +27,7 @@ $(function() {
         $("header ul").removeClass('sideBar');
         $(".hamburger").removeClass('hideHamburger');
     });
-    //Hide sidebar by Escape key for accessibility
+    //Hide side bar by Escape key for accessibility
     $("html").on("keydown", function(e) {
         if (e.key.includes("Escape")) {
             $("header ul").removeClass('sideBar');
