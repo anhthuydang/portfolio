@@ -564,7 +564,8 @@ h2 {
   color: #000519;
 }
 
-.dessertCorner {
+.dessertCorner,
+.captured {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -628,6 +629,7 @@ h2 {
   background-image: linear-gradient(rgba(74, 74, 78, 0.4)), url(./assets/letter2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  font-size: 2rem;
 }
 
 .contact .wrapper {
@@ -641,6 +643,18 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.contact p {
+  margin-top: 30px;
+}
+
+.contact .contactEmail {
+  color: inherit;
+}
+
+.contact .contactEmail:hover, .contact .contactEmail:focus {
+  text-shadow: 2px 2px 2px #fff;
 }
 
 .contact form {

@@ -4,6 +4,7 @@
     background-image: linear-gradient(rgba(74, 74, 78, 0.4)), url(./assets/letter2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-size: 2rem;
     
     .wrapper {
         display: flex;
@@ -11,6 +12,17 @@
         align-items: center;
     }
 
+    p {
+        margin-top: 30px;
+    }
+
+    .contactEmail {
+        color: inherit;
+            &:hover,
+            &:focus {
+                text-shadow: 2px 2px 2px $primary;
+            }
+    }
     form {
         width: 60%;
         display: flex;
