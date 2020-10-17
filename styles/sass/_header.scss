@@ -37,6 +37,8 @@ header {
         justify-content: center;
         align-items: center;
         background: linear-gradient( 135deg, $secondaryAccent 50%, $primary 50%);
+        box-shadow: 2px 2px 4px $text;
+        animation: spin ease-out 2s infinite;
     }
 
     .hamburger {
@@ -63,15 +65,14 @@ header {
         display: flex;
         justify-content: space-around;
         align-items: center;
-    }
-
-    a {
-        color: $text;
-        font-size: 2rem;
-        border-bottom: 2px solid transparent;
-        &:hover,
-        &:focus {
-            border-bottom-color: $accent;
+        a {
+            color: $text;
+            font-size: 2rem;
+            border-bottom: 2px solid transparent;
+            &:hover,
+            &:focus {
+                border-bottom-color: $accent;
+            }
         }
     }
     
@@ -93,12 +94,12 @@ header {
             font-size: 7rem;
             margin: 70px 0;
             color: $accent;
-            animation-duration: 1.2s;
+            // animation-duration: 1.2s;
         }
 
         h2 {
             font-size: 5rem;
-            animation-duration: 2s;
+            // animation-duration: 2s;
             text-align: left;
             font-style: italic;
             line-height: 55px;
@@ -117,3 +118,11 @@ header {
     }
 }
 
+@keyframes spin {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
